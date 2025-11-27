@@ -21,7 +21,7 @@ pipeline {
             steps { 
                withDockerRegistry([credentialsId: "dockerlogin", url: ""]) {
                  script{
-                 app =  docker.build("asg")
+                 app =  docker.build("hck")
                  }
                }
             }
